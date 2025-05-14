@@ -20,6 +20,8 @@ video {
 }
 body {
   background: #eee;
+  display: flex;
+  justify-content: center;
 }
 
 .screen {
@@ -27,6 +29,8 @@ body {
   height: 1920px;
   margin: 0 auto;
   background: #fff;
+  position: absolute;
+  z-index: -4;
 }
 .titel {
   text-align: center;
@@ -37,12 +41,14 @@ body {
   letter-spacing: -4.5px;
   padding: 159.5px 113.5px;
 }
-.QR {
+
+.QR-text {
   font-family: "Self Modern";
   font-size: 48px;
   font-style: italic;
   font-weight: 400;
   letter-spacing: -2.88px;
+  top: 90px;
 }
 .QR-code {
   width: 186px;
@@ -50,6 +56,7 @@ body {
   left: 66.5px;
   bottom: 186.5px;
 }
+
 .log {
   width: 376px;
   height: 279px;
@@ -61,12 +68,105 @@ body {
   padding: 263px 207px;
   flex-direction: column;
   align-items: flex-start;
+  position: absolute;
+  border-radius: 700px;
+  background-color: #fff;
+  z-index: 1;
+}
+.dots {
+  margin-top: 890px;
+  margin-left: 650px;
+}
+.dot-1 {
+  width: 922px;
+  height: 922px;
+  border-radius: 922px;
+  background: #1c7379;
+  // filter: blur(10px);
+  position: absolute;
+  animation-duration: 4s;
+  animation-name: changeGreenWidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeGreenWidth {
+  from {
+    width: 875px;
+    height: 875px;
+  }
+
+  to {
+    width: 922px;
+    height: 922px;
+  }
+}
+
+.dot-2 {
+  width: 1039px;
+  height: 1039px;
+  border-radius: 1039px;
+  background: #308fff;
+  // filter: blur(10px);
+  position: absolute;
+  animation-duration: 4.005s;
+  animation-name: changeBlueWidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeBlueWidth {
+  from {
+    width: 875px;
+    height: 875px;
+  }
+
+  to {
+    width: 1100px;
+    height: 1100px;
+  }
+}
+
+.dot-3 {
+  width: 1240px;
+  height: 1240px;
+  border-radius: 1240px;
+  background: #ff5f1a;
+  // filter: blur(5px);
+  position: absolute;
+  animation-duration: 4s;
+  animation-name: changeOrangeWidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeOrangeWidth {
+  from {
+    width: 875px;
+    height: 875px;
+  }
+
+  to {
+    width: 1240px;
+    height: 1240px;
+  }
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
 }
 .two {
   position: absolute;
-  z-index: 1;
+  z-index: -2;
 }
 .first {
   position: absolute;
-  z-index: 2;
+  z-index: -1;
+}
+.three {
+  position: absolute;
+  z-index: -3;
 }
