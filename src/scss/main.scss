@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../font/self-modern_italic_web.woff2") format("woff2"),
+    url("../font/self-modern_italic_web.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+body {
+  background: #eee;
+}
+
+.screen {
+  width: 1080px;
+  height: 1920px;
+  margin: 0 auto;
+  background: #fff;
+}
+.titel {
+  text-align: center;
+  font-family: "Self Modern";
+  font-size: 75px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -4.5px;
+  padding: 159.5px 113.5px;
+}
+.QR {
+  font-family: "Self Modern";
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -2.88px;
+}
+.QR-code {
+  width: 186px;
+  height: 186px;
+  left: 66.5px;
+  bottom: 186.5px;
+}
+.log {
+  width: 376px;
+  height: 279px;
+}
+.button {
+  display: flex;
+  width: 790px;
+  height: 786px;
+  padding: 263px 207px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.two {
+  position: absolute;
+  z-index: 1;
+}
+.first {
+  position: absolute;
+  z-index: 2;
+}
