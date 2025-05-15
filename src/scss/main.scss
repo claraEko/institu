@@ -165,12 +165,17 @@ body {
 .two {
   position: absolute;
   z-index: -2;
+  top: 40px;
 }
 .first {
   position: absolute;
   z-index: -1;
+  top: 50px;
 }
 .three {
   position: absolute;
   z-index: -3;
+  top: 30px;
+  left: -100px;
+  height: 2000px;
 }
